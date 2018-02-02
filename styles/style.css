@@ -16,6 +16,69 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     font-family: 'Akkurat Bold';
     src: url(../fonts/AkkBd_Pro.otf)
 }
+
+/* red: E40015 
+background: F6F7F9
+*/
+
+
 body {
     font-family: 'Akkurat Bold';
+    background: #F6F7F9;
+}
+
+main {
+    height: 100vh;
+    padding: 1px;
+}
+
+.wrapper {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4vw;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #E40015;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2vw;
+}
+
+label {
+    width: calc((100% - 100px)/3);
+    margin: 25px;
+    display: block;
+}
+
+.choices label:first-of-type(1) {
+    margin-left: 0;
+}
+
+.choices label:last-of-type(1) {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
 }

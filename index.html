@@ -8,8 +8,25 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <main>
-        <h1>Rock, paper, scissors</h1>
+    <main class="flex-container">
+        <div class="wrapper">
+            <h1>Rock, paper, scissors</h1>
+            <h2>Choose your weapon</h2>
+            <form class="choices flex-container">
+                <label for="rock">
+                    <img src="assets/icon-rock.png" alt="illustration of hand clutched in shape of a rock">
+                </label>
+                <input type="radio" name="choice" value="rock" id="rock">
+                <label for="paper">
+                    <img src="assets/icon-paper.png" alt="illustration of hand open to represent paper">
+                </label>
+                <input type="radio" name="choice" value="paper" id="paper">
+                <label for="scissors">
+                    <img src="assets/icon-scissors.png" alt="illustration of hand open to represent a pair of scissors">
+                </label>
+                <input type="radio" name="choice" value="scissors" id="scissors">
+            </form>
+        </div> <!--/.wrapper -->
     </main>
 </body>
 </html>
