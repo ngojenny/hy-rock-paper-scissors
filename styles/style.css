@@ -21,7 +21,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 background: F6F7F9
 */
 
-
 body {
     font-family: 'Akkurat Bold';
     background: #F6F7F9;
@@ -60,6 +59,13 @@ h2 {
     font-size: 2vw;
 }
 
+/* HELPER CLASSES */
+.none {
+    display: none;
+}
+
+/* LABEL STYLES */
+
 label {
     width: calc((100% - 100px)/3);
     margin: 25px;
@@ -81,4 +87,24 @@ img {
 input[type="radio"] {
     position: absolute;
     visibility: hidden;
+}
+
+.choices label {
+    position: relative;
+    /* border: 1px solid tomato; */
+}
+.choices .selected-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.choices label:hover .selected-icon,
+.choices label:focus .selected-icon {
+    opacity: 1;
+    visibility: visible
 }
