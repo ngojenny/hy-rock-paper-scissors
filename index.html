@@ -14,22 +14,25 @@
             <!-- PROMPT SECTION STARTS -->
             <section class="prompt">
                 <h2>Choose your weapon</h2>
-                <form class="choices flex-container">
-                    <label for="rock">
-                        <img src="assets/icon-rock.png" alt="illustration of hand clutched in shape of a rock">
-                        <img class="selected-icon" src="assets/icon-selected-rock.png" alt="llustration of hand clutched in shape of a rock">
-                    </label>
-                    <input type="radio" name="choice" value="rock" id="rock">
-                    <label for="paper">
-                        <img src="assets/icon-paper.png" alt="illustration of hand open to represent paper">
-                        <img class="selected-icon" src="assets/icon-selected-paper.png" alt="illustration of hand open to represent paper">
-                    </label>
-                    <input type="radio" name="choice" value="paper" id="paper">
-                    <label for="scissors">
-                        <img src="assets/icon-scissors.png" alt="illustration of hand open to represent a pair of scissors">
-                        <img class="selected-icon" src="assets/icon-selected-scissors.png" alt="illustration of hand open to represent paper">
-                    </label>
-                    <input type="radio" name="choice" value="scissors" id="scissors">
+                <form class="choices" id="initial-form">
+                    <div class="flex-container">
+                        <input type="radio" name="choice" value="rock" id="rock">
+                        <label for="rock">
+                            <img src="assets/icon-rock.png" alt="illustration of hand clutched in shape of a rock">
+                            <img class="selected-icon" src="assets/icon-selected-rock.png" alt="llustration of hand clutched in shape of a rock">
+                        </label>
+                        <input type="radio" name="choice" value="paper" id="paper">
+                        <label for="paper">
+                            <img src="assets/icon-paper.png" alt="illustration of hand open to represent paper">
+                            <img class="selected-icon" src="assets/icon-selected-paper.png" alt="illustration of hand open to represent paper">
+                        </label>
+                        <input type="radio" name="choice" value="scissors" id="scissors">
+                        <label for="scissors">
+                            <img src="assets/icon-scissors.png" alt="illustration of hand open to represent a pair of scissors">
+                            <img class="selected-icon" src="assets/icon-selected-scissors.png" alt="illustration of hand open to represent paper">
+                        </label>
+                    </div>
+                    <input class="btn battle-btn" id="battle" type="submit" value="Battle">
                 </form>
             </section>
             <!-- PROMPT SECTION ENDS -->
@@ -48,5 +51,6 @@
             <!-- RESULT SECTION ENDS -->
         </div> <!--/.wrapper -->
     </main>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
